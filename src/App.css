@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.out-con {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.out-con .inn-con {
+  width: 36rem;
+  height: 51rem;
+  overflow-y: scroll;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0rem 0rem 1rem 0rem #cdcdcd;
+  padding: 1rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.out-con .inn-con::-webkit-scrollbar {
+  width: 1rem;
+  background-color: rgb(198, 198, 198);
+  box-shadow: inset 0rem 0rem 0.5rem 0rem #000000;
 }
+.out-con .inn-con::-webkit-scrollbar-thumb {
+  width: 1rem;
+  background: black;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 1rem 0rem #bdbdbd;
+}
+.out-con .inn-con h1 {
+  margin-bottom: 1rem;
+}
+.out-con .inn-con input {
+  font-size: 1.7rem;
+  padding: 0.5rem;
+  border: 0;
+  border-bottom: 0.1rem solid black;
+  border-radius: 1rem;
+  outline: 0;
+  margin-right: 2rem;
+}
+.out-con .inn-con button {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: 0;
+  cursor: pointer;
+}
+.out-con .inn-con ol .listwithbtn {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 3rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.out-con .inn-con ol .listwithbtn button {
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.out-con .inn-con ol .listwithbtn button img {
+  width: 2rem;
+  height: 2rem;
+}/*# sourceMappingURL=App.css.map */
